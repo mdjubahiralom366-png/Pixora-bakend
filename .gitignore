@@ -1,0 +1,24 @@
+# secrets — never commit these
+.env
+secrets/
+*.json.key
+firebase-admin*.json
+
+# data & model artifacts
+dataset/*.jsonl
+models/**/checkpoints/
+models/**/model/
+models/**/tokenizer/
+*.bin
+*.safetensors
+*.pt
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# misc
+.DS_Store
+*.log
